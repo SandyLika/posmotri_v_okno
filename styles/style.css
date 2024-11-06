@@ -194,7 +194,6 @@ ol {
 }
 
 .content__video-card-title {
-
   font-family: "Oswald", sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -202,9 +201,7 @@ ol {
   text-align: left;
   text-transform: uppercase;
   text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
-  max-width: 200px;
 }
 
 .content__video-card {
@@ -224,6 +221,8 @@ ol {
   flex-direction: column;
   flex-grow: 1;
   align-items: start;
+  max-width: 200px;
+  white-space: nowrap;
 }
 
 .content__video-card-description {
