@@ -130,6 +130,10 @@ ol {
   outline-offset: 1px;
 }
 
+.search-form__label:hover:not(:has(.search-form__textfield)) {
+  text-decoration: underline;
+}
+
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
@@ -202,6 +206,7 @@ ol {
   text-transform: uppercase;
   text-overflow: ellipsis;
   overflow: hidden;
+  max-width: 200px;
 }
 
 .content__video-card {
@@ -210,8 +215,8 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  inline-size: 194px;
-  block-size: 103px;
+  width: 194px;
+  max-height: 103px;
   object-fit: cover;
   object-position: center;
 }
@@ -221,8 +226,6 @@ ol {
   flex-direction: column;
   flex-grow: 1;
   align-items: start;
-  max-width: 200px;
-  white-space: nowrap;
 }
 
 .content__video-card-description {
